@@ -1,75 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Montana PM-2.5 Concentration Map Project</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+<title>Front Page</title>
+<style>
+body {
+	background-color: white;
+}
+h2 {
+	color: white;
+    text-align: left;
+    margin-left: 40px;
+    font-size: 30px;
+}
+.button1 {
+  color: white;
+  background-color: #4D4D4D;
+  padding: 15px 30px;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-align: center;
+}
+header {
+  background-color: #4D4D4D;
+  color: #fff;
+  padding: 15px 0;
+}
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #4D4D4D;
+}
+li {
+	float: right;
+}
+li a {
+ 	display: block;
+ 	color: white;
+	text-align: right;
+	padding: 30px;
+	text-decoration: none;
+    font-size: 26px;
+}
+li a:hover {
+	background-color: #000000;
+}
+main {
+	background-color: white;
+    height: 500px;
+    width: 100%;
+    padding: 30px;
+    font-size: 24px;
+}
+p {
+	font-size: 24px;
+}
+footer {
+	background-color: #4D4D4D;
+    color: white;
+    padding: 40px
+}
+img {
+      width: 100vw; /* Set the width to 100% of the viewport width */
+      height: auto; /* Maintain aspect ratio */
+      display: block; /* Remove default image spacing */
+    }
 
-        header {
-            background-color: #007bff;
-            color: #fff;
-            padding: 1em 0;
-            text-align: center;
-        }
-
-        section {
-            margin: 2em;
-            text-align: center;
-        }
-
-        h1 {
-            color: #007bff;
-        }
-
-        p {
-            font-size: 1.1em;
-            line-height: 1.6em;
-            color: #555;
-        }
-
-        .map-image {
-            max-width: 100%;
-            height: auto;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            margin-top: 2em;
-        }
-
-        footer {
-            background-color: #007bff;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+</style>
+</style>
 </head>
 <body>
 
-    <header>
-        <h1>Montana PM-2.5 Concentration Map Project</h1>
-    </header>
+<!-- Navbar -->
+    
+<header>
+<div class="header-container">
+<h2>Montana PM-2.5 Concentration Map Project</h2>
+  <ul>
+  	<li><a href="">Contact</a></li>
+  	<li><a href="">About</a></li>
+  	<li><a href="">Home</a></li>
+</ul>
+</div>
+</header>
 
-    <section>
-        <p>Welcome to the Montana PM-2.5 Concentration Map Project. Explore the air quality in Montana through our interactive map below.</p>
+<!-- Main Grid -->
+<main>
+<img src="wildfire_pic.avif" alt="Description of the image">
+	<p></p>
 
-        <img src="map_image.jpg" alt="PM-2.5 Concentration Map" class="map-image">
 
-        <p>Stay informed about air quality in your area and take necessary precautions for your health.</p>
-    </section>
+</main>
 
-    <footer>
-        <p>&copy; 2023 Montana PM-2.5 Concentration Map Project</p>
-    </footer>
-
+<!-- Footer -->
+<footer>  
+</footer>
 </body>
 </html>
