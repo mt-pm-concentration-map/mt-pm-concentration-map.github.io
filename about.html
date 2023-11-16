@@ -1,45 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>About Page</title>
+<title>Front Page</title>
 <style>
 body {
 	background-color: white;
 }
 h2 {
 	color: white;
-    text-align: left;
-    margin-left: 40px;
-    font-size: 30px;
+    	text-align: left;
+    	margin-left: 40px;
+    	font-size: 30px;
+}
+h3 {
+	color: black;
+    	text-align: left;
+    	margin-left: 40px;
+    	font-size: 35px;
 }
 .button1 {
-  color: white;
-  background-color: #4D4D4D;
-  padding: 15px 30px;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  text-align: center;
+  	color: white;
+  	background-color: black;
+  	padding: 15px 30px;
+  	display: inline-block;
+  	font-size: 16px;
+  	margin: 4px 2px;
+  	cursor: pointer;
+  	text-align: center;
+}
+.button2 {
+	
+	text-align: center;
+	color: white;
+  	background-color: #025403;
+  	padding: 15px 30px;
+	font-size: 20px;
+	align-items: center;
 }
 header {
-  background-color: #4D4D4D;
-  color: #fff;
-  padding: 15px 0;
+  	background-color: black;
+  	color: #fff;
+  	padding: 15px 0;
 }
 .header-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #4D4D4D;
+	background-color: black;
 }
 li {
 	float: right;
@@ -53,7 +68,7 @@ li a {
     font-size: 26px;
 }
 li a:hover {
-	background-color: #000000;
+	background-color: maroon;
 }
 main {
 	background-color: white;
@@ -64,14 +79,21 @@ main {
 }
 p {
 	font-size: 24px;
+	text-indent: 50px;
 }
 footer {
-	background-color: #4D4D4D;
-    color: white;
-    padding: 40px
+	background-color: black;
+    	color: white;
+    	padding: 40px
+}
+.main_img {
+      	width: 100%; 
+     	height: auto; 
+      	display: block; 
 }
 .other_img {
-	
+	height: 80px;
+	width: auto;
 }
 
 </style>
@@ -85,24 +107,26 @@ footer {
 <div class="header-container">
 <h2>Montana PM-2.5 Concentration Map Project</h2>
   <ul>
-  	<li><a href="https://github.com/mt-pm-concentration-map/mt-pm-concentration-map.github.io/new/contact">Contact</a></li>
-  	<li><a href="https://github.com/mt-pm-concentration-map/mt-pm-concentration-map.github.io/new/about">About</a></li>
-  	<li><a href="https://github.com/mt-pm-concentration-map/mt-pm-concentration-map.github.io/new/main">Home</a></li>
+  	<li><a href="contact.html">Contact</a></li>
+  	<li><a href="about.html">About</a></li>
+  	<li><a href="index.html">Home</a></li>
 </ul>
 </div>
+	<img class="main_img" src="better_forest.jpg" alt="Montana Forest">
 </header>
 
 <!-- Main Grid -->
 <main>
-	<p></p>
-
-
+	<h3>About</h3>
+	<p>
+	
+	</p>
 </main>
 
 <!-- Footer -->
 <footer>  
-	<img class="other_img" src="inbre_logo_blue_shaddow" alt="INBRE logo">
-	<img class="other_img" src="aaso_logo" alt="AASO logo">
+	<img class="other_img" src="inbre_logo_blue_shaddow.png" alt="INBRE logo">
+	<img class="other_img" src="aaso_logo.png" alt="AASO logo">
 </footer>
 </body>
 </html>
