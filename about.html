@@ -72,7 +72,7 @@ main {
 p {
 	font-size: 24px;
 	text-indent: 50px;
-	padding-right: 20px;
+	padding-right: 40px;
 }
 footer {
 	background-color: black;
@@ -90,12 +90,16 @@ footer {
      	height: auto; 
       	display: block; 
 }
-.other_img {
+.footer_img {
 	height: 80px;
 	width: auto;
 }
 .map_cont {
-	
+	align-items: center;
+}
+.other_img {
+	height: 150px;
+	width: auto;
 }
 
 </style>
@@ -128,7 +132,7 @@ footer {
 		contributor.
 	</p>
 	<div class=map_cont>
-		<img src="PM_Stations.png" alt="PM Stations">	
+		<img class="other_img" src="PM_Stations.png" alt="PM Stations">	
 	</div>
 	<p>
 		There are only 21 ground-stations monitoring PM-2.5 in Montana (the majority are in the image above.) The 
@@ -152,8 +156,8 @@ footer {
 
 <!-- Footer -->
 <footer>  
-	<img class="other_img" src="inbre_logo_blue_shaddow.png" alt="INBRE logo">
-	<img class="other_img" src="aaso_logo.png" alt="AASO logo">
+	<img class="footer_img" src="inbre_logo_blue_shaddow.png" alt="INBRE logo">
+	<img class="footer_img" src="aaso_logo.png" alt="AASO logo">
 </footer>
 	<p class="footnote">Last updated: 2023/11/16</p>
 </body>
