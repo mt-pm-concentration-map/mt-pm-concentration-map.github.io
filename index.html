@@ -1,151 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Front Page</title>
-<style>
-body {
-	background-color: white;
-}
-a:visited{
-  	color: white;
-}
-a {
-	text-decoration: None;
-}
-h2 {
-	color: white;
-    	text-align: left;
-    	margin-left: 40px;
-    	font-size: 30px;
-}
-.button1 {
-  	color: white;
-  	background-color: black;
-  	padding: 15px 30px;
-  	display: inline-block;
-  	font-size: 16px;
-  	margin: 4px 2px;
-  	cursor: pointer;
-  	text-align: center;
-}
-.button2 {
-	color: white;
-  	background-color: black;
-	border: 2px solid black;
-  	padding: 15px 30px;
-	font-size: 30px;
-	width: 400px;
-	
-}
-.bcontainer {
-	text-align: center;
-}
-header {
-  	background-color: black;
-  	color: #fff;
-  	padding: 15px 0;
-}
-.header-container {
-	max-width: 1200px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: black;
-}
-li {
-	float: right;
-}
-li a {
- 	display: block;
- 	color: white;
-	text-align: right;
-	padding: 30px;
-	text-decoration: none;
-    	font-size: 26px;
-}
-li a:hover {
-	background-color: #067107;
-}
-main {
-	background-color: white;
-    	height: 500px;
-    	width: 100%;
-    	padding: 30px 30px 30px 30px;
-    	whfont-size: 24px;
-}
-p {
-	font-size: 24px;
-	text-indent: 50px;
-	padding-right: 30px;
-}
-footer {
-	background-color: black;
-    	color: white;
-    	padding: 20px
-}
-.footnote {
-	color: black;
-	font-size: 16px;
-	text-align: right;
-	padding: 20px;
-}
-.main_img {
-      	width: 100%; 
-     	height: auto; 
-      	display: grid;
-}
-.other_img {
-	height: 90px;
-	width: auto;
-}
 
-</style>
-</style>
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+	<title>Home Page</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+
+	<!-- Favicons -->
+	<link href="static/img/inbre_logo_blue_shaddow.png" rel="icon">
+
+	<!-- Google Fonts -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
+		rel="stylesheet">
+
+	<!-- Vendor CSS Files -->
+	<link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+	<!-- Template Main CSS File -->
+	<link href="static/css/style.css" rel="stylesheet">
 </head>
+
 <body>
 
-<!-- Navbar -->
-    
-<header>
-<div class="header-container">
-<h2>Montana PM-2.5 Concentration Map Project</h2>
-  <ul>
-  	<li><a href="https://github.com/mt-pm-concentration-map" target="_blank">GitHub</a></li>
-  	<li><a href="about.html">About</a></li>
-  	<li><a href="https://mt-pm-concentration-map.github.io/">Home</a></li>
-</ul>
-</div>
-	<img class="main_img" src="better_forest.jpg" alt="Montana Forest">
-</header>
+	<!-- Navbar -->
 
-<!-- Main Grid -->
-<main>
-	<p>
-	This is the official website for the Montana PM-2.5 Concentration Map project. We created a daily, 
-		PM-2.5 concentration map for Montana. Our next objective is to offer 3-day projections 
-		for those concentrations. This project is a joint partnership between Montana Tech and 
-		the University of Montana. We are funded by the Montana IDeA Network of Biomedical 
-		Research Excellence (INBRE). Please visit out "About" page for more information.
-	</p>
-	<div class="bcontainer">
-		<button class="button2">
-			<a href="https://ee-aspenjkmorgan.projects.earthengine.app/view/mt-hazardous-gas-map" target="_blank">View Map</a>
-		</button>
-	</div>
-</main>
+	<header id="header">
+		<div class="container-fluid">
 
-<!-- Footer -->
-<footer>  
-	<img class="other_img" src="inbre_logo_blue_shaddow.png" alt="INBRE logo">
-	<img class="other_img" src="aaso_logo.png" alt="AASO logo">
-</footer>
+			<div class="row">
+				<div class="col-lg-3 col-md-5 mb-5 mb-md-0 justify-content-center">
+					<div class="logo">
+						<h1><a href="index.html"><img src="static/img/inbre_logo_blue_shaddow.png" alt=""
+									class="img-fluid" style="size: 150px"></a>
+						</h1>
+					</div>
+				</div>
+				<!--<div class="container-fluid">
+					<h1>Montana PM-2.5 Concentration Map Project</h1>
+				</div>--> <!--A mess that I'm working on in the header-->
+			</div>
+		</div>
+
+
+
+		<!--This button is broken and I think it's something to do with the boxicon files-->
+		<button type="button" class="nav-toggle"><i class="bx bx-menu"></i></button>
+		<nav class="nav-menu">
+			<ul>
+				<li class="active"><a href="#header" class="scrollto">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="https://github.com/mt-pm-concentration-map">GitHub</a></li>
+			</ul>
+		</nav>
+		</div>
+	</header>
+
+	<section id="hero">
+		<div class="hero-container">
+			<h1>Montana PM-2.5 Concentration Map Project</h1>
+		</div>
+	</section>
+
+	<!-- Main -->
+	<main>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<img src="static/img/PM_Stations.png" class="img-fluid" alt="Montana PM-2.5 Concentration Map">
+				</div>
+				<div class="col-lg-6 pt-4 pt-lg-0">
+					<p>
+						This is the official website for the Montana PM-2.5 Concentration Map project. We created a
+						daily,
+						PM-2.5 concentration map for Montana. Our next objective is to offer 3-day projections
+						for those concentrations. This project is a joint partnership between Montana Tech and
+						the University of Montana. We are funded by the Montana IDeA Network of Biomedical
+						Research Excellence (INBRE). Please visit out "About" page for more information.
+					</p>
+					<button class="button">
+						<a href="https://ee-aspenjkmorgan.projects.earthengine.app/view/mt-hazardous-gas-map"
+							target="_blank">View Map</a>
+					</button>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<img class="img-fluid" src="static/img/inbre_logo_blue_shaddow.png" alt="INBRE logo"
+			style="width: 200px; height: auto;">
+		<img class="img-fluid" src="static/img/aaso_logo.png" alt="AASO logo" style="width: 200px; height: auto;">
+	</footer>
 	<p class="footnote">Last updated: 2023/12/27</p>
 </body>
+
 </html>
