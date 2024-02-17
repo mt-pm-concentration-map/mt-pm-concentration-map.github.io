@@ -29,75 +29,78 @@
 
 	<!-- Navbar -->
 
-	<header id="header">
-		<div class="container-fluid">
-
-			<div class="row">
-				<div class="col-lg-3 col-md-5 mb-5 mb-md-0 justify-content-center">
-					<div class="logo">
-						<h1><a href="index.html"><img src="static/img/inbre_logo_blue_shaddow.png" alt=""
-									class="img-fluid" style="size: 150px"></a>
-						</h1>
-					</div>
+	<header id="header" id="top">
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<img src="static/img/inbre_logo_blue_shaddow.png" alt="" width="36" height="30"
+						class="d-inline-block align-text-top">
+					Montana PM-2.5 Concentration Map Project
+				</a>
+				<div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+						<li class="nav-item"><a class="nav-link"
+								href="https://github.com/mt-pm-concentration-map">GitHub<i class="bxl github"></i></a>
+						</li>
+					</ul>
 				</div>
-				<!--<div class="container-fluid">
-					<h1>Montana PM-2.5 Concentration Map Project</h1>
-				</div>--> <!--A mess that I'm working on in the header-->
-			</div>
-		</div>
 
 
-
-		<!--This button is broken and I think it's something to do with the boxicon files-->
-		<button type="button" class="nav-toggle"><i class="bx bx-menu"></i></button>
-		<nav class="nav-menu">
-			<ul>
-				<li class="active"><a href="#header" class="scrollto">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="https://github.com/mt-pm-concentration-map">GitHub</a></li>
-			</ul>
 		</nav>
 		</div>
 	</header>
 
 	<section id="hero">
-		<div class="hero-container">
-			<h1>Montana PM-2.5 Concentration Map Project</h1>
-		</div>
 	</section>
 
 	<!-- Main -->
 	<main>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<img src="static/img/PM_Stations.png" class="img-fluid" alt="Montana PM-2.5 Concentration Map">
-				</div>
-				<div class="col-lg-6 pt-4 pt-lg-0">
-					<p>
-						This is the official website for the Montana PM-2.5 Concentration Map project. We created a
-						daily,
-						PM-2.5 concentration map for Montana. Our next objective is to offer 3-day projections
-						for those concentrations. This project is a joint partnership between Montana Tech and
-						the University of Montana. We are funded by the Montana IDeA Network of Biomedical
-						Research Excellence (INBRE). Please visit out "About" page for more information.
-					</p>
-					<button class="button">
-						<a href="https://ee-aspenjkmorgan.projects.earthengine.app/view/mt-hazardous-gas-map"
-							target="_blank">View Map</a>
-					</button>
+		<section style="padding-top: 3rem; padding-bottom: 3rem;">
+
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="mb-8 text-start">
+							<h4 class="text-secondary">
+								This is the official website for the Montana PM-2.5 Concentration Map project. We
+								created a
+								daily,
+								PM-2.5 concentration map for Montana. Our next objective is to offer 3-day projections
+								for those concentrations. This project is a joint partnership between Montana Tech and
+								the University of Montana. We are funded by the Montana IDeA Network of Biomedical
+								Research Excellence (INBRE). Please visit out "About" page for more information.
+							</h4>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="card overflow-hidden shadow">
+							<img src="static/img/PM_Stations.png" class="card-img-top"
+								alt="Montana PM-2.5 Concentration Map" />
+							<div class="card-body py-3 px-3">
+								<div class="d-flex flex-column flex-lg-row justify-content-center mb-3">
+									<h4 class="text-secondary"><a
+											class='link-90 text-decoration-none stretched-link fw-bold'
+											href="https://ee-aspenjkmorgan.projects.earthengine.app/view/mt-hazardous-gas-map">View
+											Map</a></h4>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
+			</div>
+		</section>
 	</main>
 
 	<!-- Footer -->
 	<footer id="footer">
 		<img class="img-fluid" src="static/img/inbre_logo_blue_shaddow.png" alt="INBRE logo"
-			style="width: 200px; height: auto;">
+			style="width: 100px; height: auto;">
 		<img class="img-fluid" src="static/img/aaso_logo.png" alt="AASO logo" style="width: 200px; height: auto;">
 	</footer>
-	<p class="footnote">Last updated: 2023/12/27</p>
+	<p class="footnote">Last updated: 2024/2/16</p>
 </body>
 
 </html>
