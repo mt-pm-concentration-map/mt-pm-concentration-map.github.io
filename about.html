@@ -2,185 +2,161 @@
 <html lang="en">
 
 <head>
-	<title>About Page</title>
-	<style>
-		body {
-			background-color: white;
-		}
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-		h2 {
-			color: white;
-			text-align: left;
-			margin-left: 40px;
-			font-size: 30px;
-		}
+	<title>Home Page</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords">
 
-		h3 {
-			color: black;
-			text-align: left;
-			margin-left: 40px;
-			font-size: 35px;
-			text-decoration: none;
-		}
+	<!-- Favicons -->
+	<link href="static/img/inbre_logo_blue_shaddow.png" rel="icon">
 
-		.button1 {
-			color: white;
-			background-color: black;
-			padding: 15px 30px;
-			display: inline-block;
-			font-size: 16px;
-			margin: 4px 2px;
-			cursor: pointer;
-			text-align: center;
-		}
+	<!-- Google Fonts -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
+		rel="stylesheet">
 
-		header {
-			background-color: black;
-			color: #fff;
-			padding: 15px 0;
-		}
+	<!-- Vendor CSS Files -->
+	<link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
 
-		.header-container {
-			max-width: 1200px;
-			margin: 0 auto;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-		}
-
-		ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			overflow: hidden;
-			background-color: black;
-		}
-
-		li {
-			float: right;
-		}
-
-		li a {
-			display: block;
-			color: white;
-			text-align: right;
-			padding: 30px;
-			text-decoration: none;
-			font-size: 26px;
-		}
-
-		li a:hover {
-			background-color: #067107;
-		}
-
-		main {
-			background-color: white;
-			height: auto;
-			width: 100%;
-			padding: 30px 30px 30px 30px;
-			whfont-size: 24px;
-		}
-
-		p {
-			font-size: 24px;
-			text-indent: 50px;
-			padding-right: 40px;
-		}
-
-		footer {
-			background-color: black;
-			color: white;
-			padding: 40px
-		}
-
-		.footnote {
-			color: black;
-			font-size: 16px;
-			text-align: right;
-			padding: 20px;
-		}
-
-		.main_img {
-			width: 100%;
-			height: auto;
-			display: block;
-		}
-
-		.footer_img {
-			height: 80px;
-			width: auto;
-		}
-
-		.map_cont {
-			text-align: center;
-		}
-
-		.other_img {
-			height: 300px;
-			width: auto;
-		}
-	</style>
-	</style>
+	<!-- Template Main CSS File -->
+	<link href="static/css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
 	<!-- Navbar -->
 
-	<header>
-		<div class="header-container">
-			<h2>Montana PM-2.5 Concentration Map Project</h2>
-			<ul>
-				<li><a href="https://github.com/mt-pm-concentration-map" target="_blank">GitHub</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="https://mt-pm-concentration-map.github.io/">Home</a></li>
-			</ul>
+	<header id="header" id="top">
+		<nav class="navbar navbar-expand-lg navbar-light py-3 d-block">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					Montana PM-2.5 Concentration Map Project
+				</a>
+				<div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+						<li class="nav-item"><a class="nav-link"
+								href="https://github.com/mt-pm-concentration-map">GitHub<i class="bxl github"></i></a>
+						</li>
+					</ul>
+				</div>
+
+
+		</nav>
 		</div>
-		<img class="main_img" src="better_forest.jpg" alt="Montana Forest">
 	</header>
 
+	<section id="hero">
+	</section>
 	<!-- Main Grid -->
 	<main>
-		<h3>About</h3>
-		<p>
-			This website is a part of a project to estimate and predict hazardous gas particle concentrations across
-			Montana. This project is focused on particulate matter under 2.5 micrometers in diameter (PM-2.5). Exposure
-			to these particles can have a severe impact on human health, even leading to cancer and premature death.
-			Although PM-2.5 is created in lots of ways, wildfires across Canada and the American west are a major
-			contributor.
-		</p>
-		<div class=map_cont>
-			<img class="other_img" src="DEQ_Map.png" alt="PM Stations">
-		</div>
-		<p>
-			There are only 20 ground-stations monitoring PM-2.5 in Montana shown above (DEQ, 2022). The first part of
-			this project involved correlating
-			ground-station measurements of PM-2.5 with satellite data to create a full coverage concentration map.
-			We used aerosol optical depth and several other climate variables in our models. The random forest
-			regression
-			model outperformed simple and multiple linear regression, so we utilized it on our Google Earth Engine app
-			to generate the daily estimates of PM-2.5 concentrations. We are in the process of writing a manuscript for
-			publication. Citation:
-		</p>
-		<p>
+		<section style="padding-top: 1rem; padding-bottom: 5rem;">
 
-			Morgan, A. J., Crowley, J., Nagisetty, R. M., Kumar, R. In preparation. Montana Statewide Google Earth
-			Engine-based Wildfire Hazardous Particulate (PM2.5) Concentrations Estimation.
-		</p>
-		<p>
-			The next phase of the project is aimed at predicting PM-2.5 concentrations three days in advance. Our goal
-			is
-			to provide Montanans with advanced notice of hazardous gas in their area, allowing them to prepare to stay
-			inside if the air quality is bad. We will continue to provide updates on this website.
-		</p>
+			<div class="container">
+				<div class="row">
+					<div class="text-center">
+						<h4 class="text-decoration-bold"><strong>About</strong></h4>
+					</div>
+					<br>
+					<div class="col-lg-6">
+						<div class="card overflow-hidden shadow">
+							<img src="static/img/DEQ_Map.png" class="card-img-top"
+								alt="Montana PM-2.5 Concentration Map" />
+							<div class="card-body py-3 px-3">
+								<div class="d-flex flex-column flex-lg-row justify-content-center mb-2">
+									<h4 class="text-secondary"><a
+											class='link-90 text-decoration-none stretched-link fw-bold'
+											href="https://ee-aspenjkmorgan.projects.earthengine.app/view/mt-hazardous-gas-map"></a>
+									</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-6">
+						<div class="mb-8 text-start">
+							<h4 class="text-secondary">
+								This website is a part of a project to estimate and predict hazardous gas
+								particle
+								concentrations across
+								Montana. This project is focused on particulate matter under 2.5 micrometers
+								in diameter
+								(PM-2.5). Exposure
+								to these particles can have a severe impact on human health, even leading to
+								cancer and
+								premature death.
+								Although PM-2.5 is created in lots of ways, wildfires across Canada and the
+								American west are a
+								major
+								contributor.
+							</h4>
+						</div>
+					</div>
+				</div>
+				<br>
+				<h5>
+					There are only 20 ground-stations monitoring PM-2.5 in Montana shown above
+					(DEQ, 2022). The
+					first part of
+					this project involved correlating
+					ground-station measurements of PM-2.5 with satellite data to create a full
+					coverage
+					concentration map.
+					We used aerosol optical depth and several other climate variables in our
+					models. The random
+					forest
+					regression
+					model outperformed simple and multiple linear regression, so we utilized it
+					on our Google Earth
+					Engine app
+					to generate the daily estimates of PM-2.5 concentrations. We are in the
+					process of writing a
+					manuscript for
+					publication.
+				</h5>
+				<h6>
+					Citation:
+					Morgan, A. J., Crowley, J., Nagisetty, R. M., Kumar, R. In preparation.
+					Montana Statewide Google
+					Earth
+					Engine-based Wildfire Hazardous Particulate (PM2.5) Concentrations
+					Estimation.
+				</h6>
+				<br>
+				<div class="text-center">
+					<h4 class="text-decoration-bold"><strong>Moving Forward</strong></h4>
+				</div>
+				<h5>
+					The next phase of the project is aimed at predicting PM-2.5 concentrations
+					three days in
+					advance. Our goal
+					is
+					to provide Montanans with advanced notice of hazardous gas in their area,
+					allowing them to
+					prepare to stay
+					inside if the air quality is bad. We will continue to provide updates on
+					this website.
+				</h5>
 	</main>
 
+
+
 	<!-- Footer -->
-	<footer>
-		<img class="footer_img" src="inbre_logo_blue_shaddow.png" alt="INBRE logo">
-		<img class="footer_img" src="aaso_logo.png" alt="AASO logo">
+	<footer id="footer">
+		<div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 flex-center">
+			<a href="https://inbre.montana.edu/"><img src="static/img/inbre_logo_blue_shaddow.png" alt="INBRE logo"
+					style="width: 200px; height: auto;"></a>
+			<a href="https://www.umt.edu/autonomous-aerial-systems/"><img src="static/img/aaso_logo.png" alt="AASO logo"
+					style="width: 200px; height: auto;"></a>
+		</div>
+		<p style="color: black;" class="text-end">Last updated: 2024/2/29</p>
+
 	</footer>
-	<p class="footnote">Last updated: 2023/12/27</p>
 </body>
 
 </html>
