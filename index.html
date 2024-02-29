@@ -30,11 +30,9 @@
 	<!-- Navbar -->
 
 	<header id="header" id="top">
-		<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block">
+		<nav class="navbar navbar-expand-lg navbar-light py-3 d-block">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="index.html">
-					<img src="static/img/inbre_logo_blue_shaddow.png" alt="" width="36" height="30"
-						class="d-inline-block align-text-top">
 					Montana PM-2.5 Concentration Map Project
 				</a>
 				<div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
@@ -55,13 +53,14 @@
 	<section id="hero">
 	</section>
 
+
 	<!-- Main -->
 	<main>
 		<section style="padding-top: 3rem; padding-bottom: 3rem;">
 
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-5">
+					<div class="col-lg-6">
 						<div class="mb-8 text-start">
 							<h4 class="text-secondary">
 								This is the official website for the Montana PM-2.5 Concentration Map project. We
@@ -70,16 +69,20 @@
 								PM-2.5 concentration map for Montana. Our next objective is to offer 3-day projections
 								for those concentrations. This project is a joint partnership between Montana Tech and
 								the University of Montana. We are funded by the Montana IDeA Network of Biomedical
-								Research Excellence (INBRE). Please visit out "About" page for more information.
+								Research Excellence (INBRE).
 							</h4>
 						</div>
+						<br>
+						<div class="text-center text-md"><a
+								class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow"
+								href="about.html" role="button">About the Project</a></div>
 					</div>
 					<div class="col-lg-6">
 						<div class="card overflow-hidden shadow">
 							<img src="static/img/PM_Stations.png" class="card-img-top"
 								alt="Montana PM-2.5 Concentration Map" />
 							<div class="card-body py-3 px-3">
-								<div class="d-flex flex-column flex-lg-row justify-content-center mb-3">
+								<div class="d-flex flex-column flex-lg-row justify-content-center mb-2">
 									<h4 class="text-secondary"><a
 											class='link-90 text-decoration-none stretched-link fw-bold'
 											href="https://ee-aspenjkmorgan.projects.earthengine.app/view/mt-hazardous-gas-map">View
@@ -96,11 +99,15 @@
 
 	<!-- Footer -->
 	<footer id="footer">
-		<img class="img-fluid" src="static/img/inbre_logo_blue_shaddow.png" alt="INBRE logo"
-			style="width: 100px; height: auto;">
-		<img class="img-fluid" src="static/img/aaso_logo.png" alt="AASO logo" style="width: 200px; height: auto;">
+		<div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 flex-center">
+			<a href="https://inbre.montana.edu/"><img src="static/img/inbre_logo_blue_shaddow.png" alt="INBRE logo"
+					style="width: 200px; height: auto;"></a>
+			<a href="https://www.umt.edu/autonomous-aerial-systems/"><img src="static/img/aaso_logo.png" alt="AASO logo"
+					style="width: 200px; height: auto;"></a>
+		</div>
+		<p style="color: black;" class="text-end">Last updated: 2024/2/29</p>
+
 	</footer>
-	<p class="footnote">Last updated: 2024/2/16</p>
 </body>
 
 </html>
