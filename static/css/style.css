@@ -203,7 +203,7 @@ h6,
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 20px 20px 30px;
+  padding: 20px 20px 20px 0px;
   font-family: "Raleway", sans-serif;
   font-size: 24px;
   font-weight: 700;
@@ -366,7 +366,7 @@ h6,
 
 .navbar-mobile a,
 .navbar-mobile a:hover {
-  padding: 10px 20px;
+  padding: 0;
   font-size: 15px;
   color: #743e1d;
 }
@@ -746,9 +746,9 @@ h6,
 #hero {
   width: 100%;
   height: 80vh;
-  padding: 20px 20px;
+  padding: 0;
   background: url("../img/better_forest.jpg") center center;
-  background-size: cover;
+  background-size: fixed;
   position: relative;
   margin-top: -80px;
   z-index: 9;
@@ -765,7 +765,7 @@ h6,
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 0 15px;
+  padding: 0;
 }
 
 #hero h1 {
@@ -944,7 +944,7 @@ section {
 
 .about ul i {
   font-size: 20px;
-  padding-right: 4px;
+  padding-right: 0;
   color: #76ff6a;
 }
 
